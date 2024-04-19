@@ -1,0 +1,24 @@
+/**Seleccion tipo etiqueta **/
+h2, a {
+    color: blueviolet;
+}
+.borde h2 {
+    background: crimson;
+    color: white;
+}
+.titulo.titulo-borde {
+    fron-size: 30px
+}
+
+#section p{
+    color: green
+}
+
+/**selector universal**/
+* {
+    text-decoration: none
+}
+
+.contenedor p {
+    background: green;
+}
