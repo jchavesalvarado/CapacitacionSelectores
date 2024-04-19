@@ -1,0 +1,15 @@
+.contenedor p {
+    color: white;
+    background: crimson;
+}
+.contenedor > p {
+    border: 1px solid black;
+    background: lightblue;
+}
+.contenedor.titulo{
+    background: green;
+}
+
+h2 + p {
+    font-size:  30px;
+}
