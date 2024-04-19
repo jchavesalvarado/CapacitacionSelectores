@@ -15,6 +15,7 @@ describe("Test selectores: next, nextall", () => {
 
     it("Productos", () => {
         cy.contains("Catalog").click()
-        cy.contains("Products").click({force: true})
+        cy.contains("Products").click({force: true}).get('#products-grid tbody').children().eq(1).nextAll().should('have.length', 13)
+        cy.contains("Products").click({force: true}).get('#products-grid tbody').children().eq(1).next().find('a')
     })
 })

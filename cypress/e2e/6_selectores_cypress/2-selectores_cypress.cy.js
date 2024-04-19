@@ -16,5 +16,10 @@ describe("Test selectores: find, parent, eq", () => {
     it("Productos", () => {
         cy.contains("Catalog").click()
         cy.contains("Products").click({force: true})
+        cy.get('#products-grid tbody').children().should('have.length', 15)
+        cy.contains("Products").click({force: true})
+        cy.get('#products-grid tbody').children().eq(3).find('a').click()
+        cy.go('back')
+        cy.get('#products-grid tbody').children().parent().parent().should('have.id','products-grid')
     })
 })

@@ -1,0 +1,36 @@
+/** Selectores de tipo o etiqueta **/
+h2,a {
+    color: indigo;
+}
+
+/** Descendencia - selector de clase **/
+.borde h2 {
+    background: crimson;
+    color: white;
+}
+
+.titulo.titulo-borde {
+    font-size: 30px;
+}
+
+/** Selector id **/
+#section p {
+    color: green;
+}
+
+/** Selector universal**/
+
+* {
+    text-decoration: underline;
+}
+
+/** Selector de atributo **/
+
+*[href] {
+    color: red;
+}
+
+h2[class]{
+    border: 1px solid black;
+}
+
